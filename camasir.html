@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Çamaşır Makinesi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body style="margin: 0;">
+    <header>
+  <div id="Header">
+    <div id="logo">
+      <img src="resimler/cantekniklogo.png" style="width: 300px; height: 300px;">
+      <a href="index.html">
+        <button id="headerbutton">Anasayfaya Dön</button>
+      </a>
+    </div>
+  </div>
+</header>
+
+      <h1 id="iletisim">Çamaşır Makinesi Arıza Bildirimi</h1>
+  <div class="urun-form-container">
+    <img src="resimler/camasir.png" alt="Çamaşır Makinesi" class="urun-ikon">
+
+    <h3 class="urun-adi">Çamaşır Makinesi</h3>
+
+    <hr class="ayirma-cizgisi">
+
+    <form class="ariza-form">
+      <label for="ariza" class="form-label">Arıza Türü:</label>
+      <select id="ariza" name="ariza" class="form-select">
+        <option value="" disabled selected>Seçiniz</option>
+        <option value="calismiyor">Çalışmıyor</option>
+        <option value="suAlmiyor">Su almıyor</option>
+        <option value="sikmiyor">Sıkma yapmıyor</option>
+        <option value="ses">Fazla ses çıkarıyor</option>
+        <option value="suAkar">Su sızdırıyor</option>
+      </select>
+
+      <label for="not" class="form-label">Açıklama:</label>
+      <textarea id="not" name="not" class="form-textarea" placeholder="Lütfen arıza ile ilgili detaylı bilgi veriniz..."></textarea>
+
+      <div class="form-buttons">
+        <button type="reset" class="btn-temizle">Temizle</button>
+        <button type="submit" class="btn-gonder">Gönder</button>
+      </div>
+    </form>
+  </div>
+
+
+    <footer>
+      &copy; 2025 Teknik Servis. Tüm hakları saklıdır.
+    </footer>
+  </div>
+</body>
+</html>

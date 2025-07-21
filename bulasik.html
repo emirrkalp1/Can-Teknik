@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Bulaşık Makinesi Arıza Bildirimi</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+
+<body style="margin: 0;">
+   <header>
+  <div id="Header">
+    <div id="logo">
+      <img src="resimler/cantekniklogo.png" style="width: 300px; height: 300px;">
+      <a href="index.html">
+        <button id="headerbutton">Anasayfaya Dön</button>
+      </a>
+    </div>
+  </div>
+</header>
+
+      <h1 id="iletisim">Bulaşık Makinesi Arıza Bildirimi</h1>
+
+      <div class="urun-form-container">
+  <div class="urun-bilgi">
+    <img src="resimler/bulasik.png" alt="Bulaşık Makinesi" class="urun-ikon" />
+    <h3 class="urun-adi">Bulaşık Makinesi</h3>
+  </div>
+  <hr class="ayirma-cizgisi" />
+  <form class="ariza-form">
+    <label for="ariza-turu" class="form-label">Arıza Türü:</label>
+    <select id="ariza-turu" name="ariza-turu" class="form-select" required>
+      <option value="" disabled selected>Seçiniz</option>
+      <option value="calismiyor">Makine çalışmıyor</option>
+      <option value="su-almiyor">Su almıyor</option>
+      <option value="su-bosaltmiyor">Su boşaltmıyor</option>
+      <option value="yikamiyor">Yıkama yapmıyor</option>
+      <option value="ses">Fazla ses çıkarıyor</option>
+      <option value="koku">Kötü koku var</option>
+      <option value="ekran">Panel / ekran arızası</option>
+      <option value="su-kacagi">Su sızdırıyor</option>
+    </select>
+
+    <label for="aciklama" class="form-label">Açıklama:</label>
+    <textarea id="aciklama" name="aciklama" rows="4" placeholder="Lütfen arıza ile ilgili detaylı bilgi veriniz..." class="form-textarea"></textarea>
+
+    <div class="form-buttons">
+      <button type="reset" class="btn-temizle">Temizle</button>
+      <button type="submit" class="btn-gonder">Gönder</button>
+    </div>
+  </form>
+</div>
+
+
+    <footer>
+      &copy; 2025 Teknik Servis. Tüm hakları saklıdır.
+    </footer>
+  </div>
+</body>
+</html>
